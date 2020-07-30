@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Wikipedia article summary</title>
+    <link rel="shortcut icon" href="growth.png" type="image/x-icon">
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    .btn-large {
+        margin: 5px;
+        animation: onload 1s ease forwards ;
+    }
+    .box {
+        overflow: hidden;
+        height: 80vh;
+    }
+    .small {
+        padding-left: 50vw;
+  animation: onload2 1s ease forwards 1s;
+    }
+      @keyframes onload2 {
+  from {
+      padding-left: 30vw;}
+  to {display: block;
+      padding-left: 2vw;}
+}
+    @keyframes onload {
+  from {display: none;
+      padding-left: 30vw;}
+  to {display: block;
+      padding-left: 2vw;}
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="row" style="background-color: #f3ecc2;"> 
+    <div class="col s12 m6 z-depth-4 box" style="margin:auto;height:100vh;background-color: #f3ecc2;z-index:1; color: #14b1ab;margin: 0;padding: 8vh 0px 16vh 2vw;">
+       <div class="z-depth-1" style="padding: 22vh 0px 10vh 20px;position: relative;right: 16px; overflow: hidden;">
+            <div style="text-align: left;font-weight: 700;">
+                <h4 class=" z-depth-3 btn-large px-5 waves-effect"
+                    style="font-size: 32px;background-color: #f3ecc2; padding-right: 5%; color: #14b1ab;">Wikipedia Articles Summary
+                </h4>
+                <small class="z-depth-3 btn-small px-5 waves-effect small" style="background-color: #f3ecc2;color:yellowgreen;">Genrates
+                    the summary of wikipedia articles using the url to article</small>
+            </div>
+            <div class="row" style="width: 90%; margin-top: 10%;">
+                <form class="col s12" action="/summary" method="post">
+                    <div class="row">
+                        <div class="input-field col m8 s12 ">
+                            <input id="url" name="url" class="z-depth-4" type="text">
+                            <label for="url"><b>Paste the url...</b></label>
+                        </div>
+                        <div class="input-field col m4 s12">
+            
+                            <input id="count" name="count" type="text">
+                            <label for="count"><b>Number of sentenses..</b></label>
+                        </div>
+                    </div>
+                    <i class="material-icons send"></i>
+                    <div class="row center px-5">
+            
+                        <button type="submit" class="btn-small waves-effect waves-teal z-depth-4" style="width: 30vw;"
+                            data-target="modal">
+                            Genrate summary
+                        </button>
+            
+                    </div>
+                </form>
+            </div>
+       </div></div>
+        <div class="col s12 m6" style="margin:auto;height:100vh;background-color: #e8505b;">
+            <p  class="white-text ans" style="text-align: center;font-size: 17px;width: 90%;margin: auto;text-align: justify;margin-top: 30px;">
+            {{summary}}
+        </p>
+    </div>
+
+
+
+    <!--  Scripts-->
+
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src=".js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/custom.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+</body>
+
+</html>
