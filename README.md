@@ -24,7 +24,7 @@
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
-* [About the Project](#about-the-project)
+* [Project](#project)
   * [Built With](#built-with)
 * [Getting Started](#getting-started)
   * [Prerequisites](#prerequisites)
@@ -35,13 +35,13 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
+## Project
 
  <a href="https://github.com/github_Abhayparashar/Wikipedia-article-summrization">
     <img src="static/img/img.png">
   </a>
 
-`Abhayparashar31`, `Google-Search-Query-Assistant`,  `parasharabhay13@gmail.com`
+`Abhayparashar31`, `Wikipedia-article-summrization`,  `parasharabhay13@gmail.com`
 
 
 ### Built With
